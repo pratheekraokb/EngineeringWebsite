@@ -43,7 +43,15 @@
             background-color: aqua;
             margin: 5px;
         }
-
+        button.articlebtn{
+            background-color: #4CAF50;
+            /* min-width: 160px; */
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
         button a {
             text-decoration: none;
             color: red;
@@ -130,14 +138,25 @@
             border-radius: 10px;
             padding: 20px;
             color: #fff;
+            text-align: center;
+
             }
 
             article:nth-child(odd) {
             background-color: #55BBE9;
+        
             }
 
             article:nth-child(even) {
             background-color: #afbe29;
+            }
+            article a{
+                text-decoration: none;
+                color: black;
+                font-style: italic;
+                padding: 5px;
+                font-size: medium;
+                margin-top: 3px;
             }
 
            
@@ -188,8 +207,13 @@
     <div class="container">
         <div class="TopDiv">
             <main>
+                <br>
                 <article>Semester 1</article>
-                <article>Semester 2</article>
+                <article>
+                    Semester 2 <br>
+                    <a href="">Java</a>
+                    <a href="">Data Structures</a>
+                </article>
                 <article>Semester 3</article>
                 <article>Semester 4</article>
                 <article>Semester 5</article>
