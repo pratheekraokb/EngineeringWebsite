@@ -14,18 +14,91 @@
             margin: 0;
         }
         table {
-        border-collapse: collapse;
-        border-spacing: 0;
-        width: 100%;
-        border: 1px solid #ddd;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 5px solid blue;
         }
 
         th, td {
-        text-align: left;
+        text-align: center;
         padding: 8px;
         }
 
         tr:nth-child(even){background-color: #f2f2f2}
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            display: flex;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+        .active2 {
+            background-color: blueviolet;
+            width: 140px;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        table td button {
+            /* padding: 10px; */
+            margin-right: 5px;
+        }
+
+        button {
+
+            height: 60px;
+            min-width: 100px;
+            background-color: aqua;
+            margin: 5px;
+        }
+
+        button a {
+            text-decoration: none;
+            color: red;
+            font-weight: bolder;
+        }
+
+        button a:hover {
+            color: black;
+        }
+
+        tr:hover {
+            background-color: green;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        div.table {
+            justify-content: center;
+        }
        
     </style>
 </head>
@@ -72,60 +145,21 @@
         <div style="overflow-x:auto;">
             <table>
               <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
-                <th>Points</th>
+                <th>Sl Number</th>
+                <th>Topic</th>
+                <th>Materials></th>
               </tr>
+              
               <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>Adam</td>
-                <td>Johnson</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
-                <td>67</td>
+                <td>#</td>
+                <td>Complete Codes/ Record <br>In One Pdf</td>
+                <td>
+                  <button> <a href="https://drive.google.com/uc?export=download&id=1_AoYP3qONSbfpZYHhmZZcWl1RxZUjfCR"
+                    download="CompleteJavaCode.pdf">Complete <br>Code</a> </button>
+                  <button> <a href="https://drive.google.com/uc?export=download&id=1SgbXzHx9RMuGvcUZVbGY4BzwagS6jIMU"
+                    download="CompleteJavaCode.pdf">Complete <br>Record</a> </button>
+                
+                </td>
               </tr>
             </table>
           </div>
