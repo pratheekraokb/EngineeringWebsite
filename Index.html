@@ -159,6 +159,19 @@
                 margin-top: 3px;
             }
 
+            .open-button {
+                background-color: #555;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                opacity: 0.8;
+                position: fixed;
+                bottom: 30%;
+                right: 28px;
+                /* width: 280px; */
+                }
+
            
             
     </style>
@@ -166,7 +179,7 @@
 
 
 <body>
-
+    <a name="top">
     <div class="NavBar">
         <nav class="navbar navbar-dark bg-dark ">
             <div class="container-fluid">
@@ -205,13 +218,14 @@
 
 
     <div class="container">
+       <a href="#top"><button class="open-button">TOP</button></a>
         <div class="TopDiv">
             <main>
             
                 <article>Semester 1</article>
                 <article>
                     Semester 2 <br>
-                    <a href="" onclick="javaVisible()">Java</a>
+                    <a href="#s3java" onclick="javaVisible()">Java</a>
                     <a href="#s3ds" onclick="dsVisible()">Data Structures</a>
                 </article>
                 <article>Semester 3</article>
@@ -923,6 +937,7 @@
         </div>
 
     </div>
+    </a>
 
 
 
